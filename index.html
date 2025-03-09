@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EURO-ALL NATURAL - Healthy Living Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo_euroallnatural.png" alt="EURO-ALL NATURAL Logo">
+                <span class="slogan">Reconnect. Revitalize. Thrive.</span>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#lifestyle">Lifestyle</a></li>
+                        <li><a href="#nutrition">Nutrition</a></li>
+                        <li><a href="#skin">Skin Care</a></li>
+                    </ul>
+                </nav>
+                <select id="currency-select" class="currency-select">
+                    <option value="EUR">EUR (€)</option>
+                    <option value="GBP">GBP (£)</option>
+                    <option value="CHF">CHF (Fr)</option>
+		    <option value="SEK">SEK (SEK)</option>
+                </select>
+                <select id="language-select" class="language-select">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                    <option value="fr">Svenska</option>
+                    <option value="fr">Smålänska</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Step Into a Healthier Life</h1>
+            <p>Explore natural products and insights for wellness, nutrition, and skin vitality.</p>
+            <button class="cta-button" onclick="scrollToSection('products')">Discover Now</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <h2>Our Natural Offerings</h2>
+        <div class="product-grid">
+            <div class="product-card" data-product-id="nordiska-berries" data-price="14.99">
+                <h3>Nördic Berry</h3>
+                <p>€250 - Packed with Nordic antioxidants.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-product-id="gaelic-grass" data-price="19.99">
+                <h3>Gaelic Grass</h3>
+                <p>€500 - Sustainably grown in Ireland.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-product-id="fuego-andaluz" data-price="24.99">
+                <h3>Fuego Andaluz</h3>
+                <p>€50 - Vibrant Andalusian spices.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-product-id="estonian-eucalyptus" data-price="16.99">
+                <h3>Estonian Eucalyptus</h3>
+                <p>€150 - Refreshing Estonian botanicals.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="cart-summary">
+            <h4>Cart (<span id="cart-count">0</span> items)</h4>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="cart-total">€0.00</span></p>
+            <button id="checkout-button" disabled>Checkout</button>
+        </div>
+    </section>
+
+    <!-- Lifestyle Section -->
+    <section id="lifestyle" class="info-section">
+        <h2>Healthy Lifestyle</h2>
+        <p>Living a healthy lifestyle involves regular exercise, adequate sleep, and stress management. Aim for at least 30 minutes of physical activity daily, 7-9 hours of sleep, and mindfulness practices like meditation to boost your well-being.</p>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section id="nutrition" class="info-section">
+        <h2>Nutrition</h2>
+        <p>A balanced diet is key to good health. Include plenty of fruits, vegetables, whole grains, lean proteins, and healthy fats. Stay hydrated with 6-8 glasses of water daily and limit processed foods to maintain energy and vitality.</p>
+    </section>
+
+    <!-- Skin Care Section -->
+    <section id="skin" class="info-section">
+        <h2>Skin Care</h2>
+        <p>For unusual skin changes like rashes or acne, consult a dermatologist. Start by observing symptoms, taking photos, and seeking professional advice online or in-person for accurate diagnosis and treatment.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo_euroallnatural.png" alt="EURO-ALL NATURAL Logo" class="footer-logo-img">
+                <p>We bring you the best of nature, inspired by Europe's rich landscapes and traditions. From pure, natural products to transformative wellness journeys, we help you nourish your body, mind, and soul. Embrace the power of berries, botanicals, and holistic health to create a life in harmony with nature.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#contact">Contact Us</a>
+                <a href="#social">Follow Us</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#whistleblower">Whistleblower Function</a>
+                <a href="#media">Media Questions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
